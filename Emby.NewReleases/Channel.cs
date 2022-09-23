@@ -19,14 +19,14 @@ using MediaBrowser.Common.Extensions;
 
 namespace Emby.NewReleases
 {
-    public class SpotlightChannel : IChannel, IHasCacheKey, IRequiresMediaInfoCallback
+    public class NewReleasesChannel : IChannel, IHasCacheKey, IRequiresMediaInfoCallback
     {
         private ILibraryManager LibraryManager { get; set; }
         private ITaskManager TaskManager { get; set; }       
         private ILogger Log { get; set; }
 
         
-        public SpotlightChannel(ILibraryManager libraryManager,  ILogManager logManager, ITaskManager taskManager)
+        public NewReleasesChannel(ILibraryManager libraryManager,  ILogManager logManager, ITaskManager taskManager)
         {
             LibraryManager = libraryManager;
             TaskManager = taskManager;
