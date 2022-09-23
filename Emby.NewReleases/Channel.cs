@@ -144,24 +144,7 @@ namespace Emby.NewReleases
                 
 
             }
-            
-            //var itemsResult = new List<ChannelItemInfo>();
                         
-            //foreach(var item in items)
-            //{
-            //    var mediaSourceResult = new List<MediaSourceInfo>();
-            //    foreach(var source in item.MediaSources)
-            //    {
-            //        if(!mediaSourceResult.Exists(s => s.Path == source.Path))
-            //        {
-            //            mediaSourceResult.Add(source);
-            //        }
-            //    }
-
-            //    item.MediaSources = mediaSourceResult;
-            //    itemsResult.Add(item);
-            //}
-
 
             return await Task.FromResult(new ChannelItemResult
             {
