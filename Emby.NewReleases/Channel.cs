@@ -139,8 +139,7 @@ namespace Emby.NewReleases
                         People          = LibraryManager.GetItemPeople(item),
                         MediaSources    = sources
                         
-                    });
-              
+                    });             
                 
 
             }
@@ -165,9 +164,7 @@ namespace Emby.NewReleases
                 IsFallbackImage = true,
                 Protocol = MediaProtocol.File,
                 Stream = GetType().Assembly.GetManifestResourceStream(path)
-            });
-
-            
+            });            
         }
 
         public IEnumerable<ImageType> GetSupportedChannelImages()
