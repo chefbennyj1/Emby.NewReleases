@@ -185,6 +185,8 @@ namespace Emby.NewReleases
 
             var item = channel.Items.FirstOrDefault(i => i.Id == id);
             
+            
+            
             if(item.MediaSources.Count <= 1)
             {
                 return item.MediaSources.GetRange(0, 0);
@@ -192,6 +194,8 @@ namespace Emby.NewReleases
 
             Log.Info($"Sending Media Source info for {item.Name}");
             
+            //Send all the other media sources found in the list, except for the first one.
+            //Emby already knows about the first media source.
             return item.MediaSources.GetRange(1, item.MediaSources.Count -1);            
 
         }
